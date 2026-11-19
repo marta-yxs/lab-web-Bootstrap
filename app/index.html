@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Сборка Bootstrap</title>
+  <link rel="stylesheet" href="./dist/styles.css">
+  <script defer src="./dist/bundle.js"></script>
+</head>
+<body>
+  <main class="container lab-page">
+    
+    <Сетка>
+    <div class="row g-3 mb-5">
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="grid-cell">1 колонка</div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="grid-cell">2 колонка</div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="grid-cell">3 колонка</div>
+      </div>
+    </div>
+
+    <Аккордеон>
+    <div class="faq-intro">
+    </div>
+    
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Собраны сетка и аккордеон
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Collapse подключен через webpack
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
